@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+}
+
+$font-familly: 'Inter';
+$primary-color: black;
+$secondary-color: white;
+$accent-color1: #6fce94;
+$accent-color2: #695bcb;
+$accent-color3: #3b8bfa;
+$accent-color4: #fcca71;
+$accent-color5: #96959a;
+$icon-background-color: #e2f1f8;
+$app-background-color: #fafafc;
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: $font-familly;
+    background-color: #b5ade9;
+    display: flex;
+    justify-content: center;
+    .app {
+        width: 30vw;
+        height: 100%;
+        background-color: $app-background-color;
+        padding: 4vh 2vh 2vh 2vh;
+        border-radius: 30px;
+
+        header {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            svg {
+                height: 30%;
+            }
+
+            .container {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    text-align: center;
+
+                    h2 {
+                        font-size: larger;
+                    }
+
+                    p {
+                        color: $accent-color1;
+                    }
+                }
+
+                img {
+                    height: inherit; //الوراثة
+                    object-fit: cover;
+                }
+            }
+        }
+
+        main {
+            height: 75%;
+            width: 100%;
+            padding-top: 3%;
+            display: grid;
+            gap: 2%;
+
+            .request {
+                display: flex;
+                gap: 5%;
+                text-wrap: nowrap;
+
+                div {
+                    h1 {
+                        font-size: x-large;
+                    }
+
+                    p{
+                        color: $accent-color5;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    color: $secondary-color;
+                    background-color: $accent-color2;
+                    border-radius: 15px;
+                }
+            }
+
+            .rating {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .stars {
+                    width: 30%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    color: $accent-color4;
+                }
+
+                div:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    data:first-child {
+                        font-size: larger;
+                        font-weight: 600;
+                    }
+
+                    data:last-child {
+                        color: $accent-color5;
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                gap: 5%;
+                justify-content: center;
+
+                button {
+                    width: 20%;
+                    padding: 0px 5%;
+                    border-radius: 15px;
+                    display: flex;
+                    align-items: center;
+                    background-color: $icon-background-color;
+                }
+
+                .blue {
+                    color: $accent-color3;
+                }
+
+                .green {
+                    color: $accent-color1;
+                }
+
+                .purple {
+                    color: $accent-color2;
+                }
+            }
+
+            .statistiques {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+                height: fit-content;
+                padding: 0 5%;
+                row-gap: 5%;
+
+                div {
+                    background-color: $secondary-color;
+                    height: inherit;
+                    text-wrap: nowrap;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 80%;
+                    padding: 3% 0;
+                    border-radius: 20px;
+
+                    svg {
+                        width: 100%;
+                        height: 30%;
+                        padding: 0 35%;
+                    }
+
+                    div {
+                        width: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 5px;
+
+                        data {
+                            font-size: larger;
+                            font-weight: 600;
+                        }
+
+                        p{
+                            font-size: smaller;
+                            color: $accent-color5;
+                        }
+                    }
+                    
+                    .green {
+                        color: $accent-color1;
+                    }
+
+                    .blue {
+                        color: $accent-color3;
+                    }
+
+                    .purple {
+                        color: $accent-color2;
+                    }
+
+                    .yellow {
+                        color: $accent-color4;
+                    }
+                }
+            }
+        }
+
+        footer {
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            a {
+                height: 70%;
+                width: 100%;
+                padding: 0 2%;
+
+                button {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                    color: $secondary-color;
+                    background-color: $accent-color2;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Inter";
+  background-color: #b5ade9;
+  display: flex;
+  justify-content: center;
+}
+body .app {
+  width: 30vw;
+  height: 100%;
+  background-color: #fafafc;
+  padding: 4vh 2vh 2vh 2vh;
+  border-radius: 30px;
+}
+body .app header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .app header svg {
+  height: 30%;
+}
+body .app header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+body .app header .container div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+}
+body .app header .container div h2 {
+  font-size: larger;
+}
+body .app header .container div p {
+  color: #6fce94;
+}
+body .app header .container img {
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .app main {
+  height: 75%;
+  width: 100%;
+  padding-top: 3%;
+  display: grid;
+  gap: 2%;
+}
+body .app main .request {
+  display: flex;
+  gap: 5%;
+  text-wrap: nowrap;
+}
+body .app main .request div h1 {
+  font-size: x-large;
+}
+body .app main .request div p {
+  color: #96959a;
+}
+body .app main .request button {
+  width: 100%;
+  color: white;
+  background-color: #695bcb;
+  border-radius: 15px;
+}
+body .app main .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .app main .rating .stars {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fcca71;
+}
+body .app main .rating div:last-child {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .app main .rating div:last-child data:first-child {
+  font-size: larger;
+  font-weight: 600;
+}
+body .app main .rating div:last-child data:last-child {
+  color: #96959a;
+}
+body .app main .actions {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+body .app main .actions button {
+  width: 20%;
+  padding: 0px 5%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #e2f1f8;
+}
+body .app main .actions .blue {
+  color: #3b8bfa;
+}
+body .app main .actions .green {
+  color: #6fce94;
+}
+body .app main .actions .purple {
+  color: #695bcb;
+}
+body .app main .statistiques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 5%;
+  row-gap: 5%;
+}
+body .app main .statistiques div {
+  background-color: white;
+  height: inherit;
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 3% 0;
+  border-radius: 20px;
+}
+body .app main .statistiques div svg {
+  width: 100%;
+  height: 30%;
+  padding: 0 35%;
+}
+body .app main .statistiques div div {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+body .app main .statistiques div div data {
+  font-size: larger;
+  font-weight: 600;
+}
+body .app main .statistiques div div p {
+  font-size: smaller;
+  color: #96959a;
+}
+body .app main .statistiques div .green {
+  color: #6fce94;
+}
+body .app main .statistiques div .blue {
+  color: #3b8bfa;
+}
+body .app main .statistiques div .purple {
+  color: #695bcb;
+}
+body .app main .statistiques div .yellow {
+  color: #fcca71;
+}
+body .app footer {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+body .app footer a {
+  height: 70%;
+  width: 100%;
+  padding: 0 2%;
+}
+body .app footer a button {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  background-color: #695bcb;
+}/*# sourceMappingURL=style.css.map */
